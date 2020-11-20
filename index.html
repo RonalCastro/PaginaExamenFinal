@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <script type="text/javascript" src="MiArchivo.js"></script>
+    <style>
+     body{
+         background-image: url("IMG/Fondo2.jpg");
+         background-size: 100%;
+     }
+      .bloque{
+          margin-left: 10px;
+          float: left;
+      }
+      .agregar{
+          border-radius: 10px;
+          background-color: cornflowerblue;
+          font-family: Arial, Helvetica, sans-serif;
+          border: solid 2px black;
+      }
+      #contenedorTabla{
+          margin: 350px;
+          width: 600px;
+          margin-top: 30px;
+      }
+      table{
+          width: 100%;
+          background-color:white;
+          text-align: left;
+          border-collapse: collapse;
+      }
+      th, td{
+          padding: 10px;
+
+      }
+      thead{
+          background-color:crimson;
+          border-bottom: solid 5px red;
+      }
+      .IMG{
+          border: solid 2px orange;
+          border-radius: 15px;
+          box-shadow: 0px 23px 5px -1px rgba(0,0,0,0.5);
+      }
+    </style>
+</head>
+<body>
+    <h3>Lista de productos disponibles</h3>
+    <div class="bloque">
+     
+      
+        <img src="IMG/AlienwareLaptop.jpg" width="300px" border-radius="5px" class="IMG">
+        <h5>Laptop Alienware</h5>
+        <h6 class="Laptop">Q:7000</h6>
+        <button class="agregar" id="Laptop">Agregar al carrito</button>
+    </div>
+
+    <div class="bloque">
+        <img src="IMG/Case.jpg" width="300px" class="IMG">
+        <h5>Case</h5>
+        <h6 class="Case">Q:500</h6>
+        <button class="agregar" id="Case">Agregar al carrito</button>
+    </div>
+
+    <div class="bloque">
+        <img src="IMG/Monitor.jpg" width="300px" height="300px" class="IMG">
+        <h5>Monitor</h5>
+        <h6 class="Monitor">Q:1200</h6>
+        <button class="agregar" id="Monitor">Agregar al carrito</button>
+    </div>
+    <div class="bloque">
+        <img src="IMG/motherboardMSI.jpg" width="300px" class="IMG">
+        <h5>Mother board</h5>
+        <h6 class="Placa">Q:500</h6>
+        <button class="agregar" id="Placa">Agregar al carrito</button>
+    </div>
+    <div class="bloque">
+        <img src="IMG/Teclado.jpg" width="300px" class="IMG">
+        <h5>Teclado Gaming</h5>
+        <h6 class="Teclado">Q:250</h6>
+        <button class="agregar" id="Teclado">Agregar al carrito</button>
+    </div>
+    <div class="bloque">
+        <img src="IMG/USB steren.jpg" width="300px" class="IMG">
+        <h5>USB</h5>
+        <h6 class="USB">Q:90</h6>
+        <button class="agregar" id="USB">Agregar al carrito</button>
+    </div>
+    <div class="bloque">
+        <img src="IMG/TarjetaGrafica.jpg" width="300px" height="300px" class="IMG">
+        <h5>Tarjeta Grafica</h5>
+        <h6 class="TGrafica">Q:2500</h6>
+        <button class="agregar" id="TGrafica">Agregar al carrito</button>
+    </div>
+    <div class="bloque">
+        <img src="IMG/MousePad.jpg" width="300px" height="300px" class="IMG">
+        <h5>Mouse Pad</h5>
+        <h6 class="MousePad">Q:125</h6>
+        <button class="agregar" id="MousePad">Agregar al carrito</button>
+    </div>
+
+    <div id="contenedorTabla">
+        <table id="tabla">
+            <thead>
+               <tr>
+                   <th>Descripcion</th><th>precio</th><th>Subtotal</th>
+               </tr>
+            </thead>
+          <tbody id="Mitabla">
+
+          </tbody>
+        </table>
+        <h4 id="Total">Total: 00</h4>
+        <button id="ventas">Vender</button> 
+        <button id="redirigir">Ver Historial de ventas</button>    
+    </div>
+   
+    
+
+</body>
+</html>
